@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bosa Facility Services</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Cleaning Company Website Template" name="keywords">
+        <meta content="Cleaning Company Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- Ajax -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Header Start -->
+            <div class="header home">
+                <div class="container-fluid">
+                    <div class="header-top row align-items-center">
+                        <div class="col-lg-3">
+                            <div class="brand">
+                                <a href="index.html">
+                                    <img src="img/logo.webp" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                            <div class="badge">
+                                <img src="img/badge.png">
+                            </div>
+                        <div class="col-lg-9">         
+                            <div class="topbar">
+                                <div class="topbar-col">
+                                    <a href="tel:0403 677 475"><i class="fa fa-phone-alt"></i> 0403 677 475  </a>
+                                </div>
+                                <div class="topbar-col">
+                                    <a href="mailto:info@bosa.net.au"><i class="fa fa-envelope"></i> info@bosa.net.au</a>
+                                </div>
+                                <div class="topbar-col">
+                                </div>
+                                </div>
+                            <div class="navbar navbar-expand-lg bg-light navbar-light">
+                                <a href="#" class="navbar-brand">MENU</a>
+                                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                    data-target="#navbarCollapse">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+    
+                                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                    <div class="navbar-nav ml-auto">
+                                        <a href="index.html" class="nav-item nav-link">HOME</a>
+                                        <a href="about.html" class="nav-item nav-link">ABOUT</a>
+                                        <a href="service.html" class="nav-item nav-link active">SERVICES</a>
+                                        <a href="contact.html" class="nav-item nav-link">CONTACT</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Header End -->
+    
+                    <div class="hero row align-items-center">
+                        <div class="col-md-5">
+                            <div class="form">
+                                <h3>Get A Quote</h3>
+                                <form id="submit-form" action="">
+                                    <input class="form-control" type="text" id="fname" name="name" placeholder="Your Name" required>
+                                    <input class="form-control" type="text" id="mnum" name="mobile" placeholder="Mobile Number" required>
+                                    <div class="control-group required">
+                                        <select class="custom-select" name="Service">
+                                            <option selected>Choose a service</option>
+                                            <option value="House Cleaning">House Cleaning</option>
+                                            <option value="Apartment Cleaning">Apartment Cleaning</option>
+                                            <option value="Office Cleaning">Office Cleaning</option>
+                                            <option value="Garden Maintenance">Garden Maintenance</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+                                    <textarea class="form-control"name="address" placeholder="Address" required></textarea>
+                                    <button class="btn btn-block">Get A Quote</button>
+                                </form>
+                            </div>
+                        </div>
+                        <script>
+                            $("#submit-form").submit((e)=>{
+                                e.preventDefault()
+                                $.ajax({
+                                    url:"https://script.google.com/macros/s/AKfycbyLjAkFhN2hiqFRhmliHW0c5L9enGHMqvNsW8rEtpUh375rQRkwf_GO5AYUJLH9RpJPrA/exec",
+                                    data:$("#submit-form").serialize(),
+                                    method:"post",
+                                    success:function (response){
+                                        window.location.reload()
+                                        window.location.href="thank.html"
+                                    },
+                                    error:function (err){
+                                        alert("Something Error")
+                        
+                                    }
+                                })
+                            })
+                        </script>
+                        <div class="col-md-7">
+                            <h2>Top Quality</h2>
+                            <h2><b><span>Cleaning Service </b></span>in Australia</h2>
+                            <p>Affordable Commercial Cleaning</p>
+                            <p>Creating the best atmosphere</p>
+                        </div>
+                    </div>
+                    </div>
+                    
+            </div>
+            <!-- Header End -->
+
+            <!--Service Form-->
+            
+            <!--Service Form End-->
+            
+            
+            <!-- Page Header Start -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Our Services</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="">Home</a>
+                            <a href="">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+
+        <!-- Service Start -->
+        <div class="service">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Leading Cleaning Services across our region</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <img src="img/productionplant.jpg" alt="Service">
+                            <h3>General Facilities Cleaning</h3>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <img src="img/windows.jpg" alt="Service">
+                            <h3>Window Cleaning</h3>
+                        </br>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <img src="img/carcare.jpg" alt="Service">
+                            <h3>Mechanical Scrubbing</h3>
+                        </br>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <img src="img/pressure.jpg" alt="Service">
+                            <h3>High Pressure Cleaning</h3>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <img src="img/garden.jpg" alt="Service">
+                            <h3>Small Garden maintenance</h3>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <img src="img/stepclean.jpg" alt="Service">
+                            <h3>Detail Cleaning</h3>
+                        </br>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <img src="img/solar.jpg" alt="Service">
+                            <h3>Solar Panel Cleaning</h3>
+                        </br>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="service-item">
+                            <img src="img/carpet.jpg" alt="Service">
+                            <h3>Carpet Extraction and Shampoo</h3>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+            
+            
+            <!-- Feature Start -->
+            <div class="feature">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="section-header left">
+                                <p>Why Choose Us</p>
+                                <h2>Expert Cleaners and World Class Services</h2>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                            </p>
+                            <a class="btn" href="">Learn More</a>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <img src="img/feature-1.jpg" alt="Feature">
+                                </div>
+                                <div class="col-7">
+                                    <h3>Expert Cleaners</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <img src="img/feature-2.jpg" alt="Feature">
+                                </div>
+                                <div class="col-7">
+                                    <h3>Reasonable Prices</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <img src="img/feature-3.jpg" alt="Feature">
+                                </div>
+                                <div class="col-7">
+                                    <h3>Quick & Best Services</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature End -->
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-contact">
+                            <h2>Get In Touch</h2>
+                            <p><i class="fa fa-map-marker-alt"></i>Bosa Facility Services,<br>34 Yeomans
+                                Road,<br>Armidale NSW 2350</p>
+                            <p><i class="fa fa-phone-alt"></i>0403 677 475</p>
+                            <p><i class="fa fa-envelope"></i>info@bosa.net.au</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-link">
+                            <h2>WE</h2>
+                            <a href="about.html">About Us</a>
+                            <a href="service.html">Our Services</a>
+                            <a href="">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-link">
+                            <h2>Stay Connected</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d40738.58493926088!2d151.65681702149593!3d-30.48685952149826!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9f756e7da602a3%3A0xfd457aa8c37db007!2s34%20Yeomans%20Rd%2C%20Armidale%20NSW%202350%2C%20Australia!5e0!3m2!1sen!2sin!4v1671971378463!5m2!1sen!2sin" 
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; <a href="index.html">Bosa Facility Services</a>, All Right Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Designed By <a href="mailto:atulmohanan01@gmail.com">Atul Mohanan</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+            
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
